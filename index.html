@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1, user-scalable=no" />
+    <meta name="theme-color" content="#050507" />
+
+    <title>lull · be lulled</title>
+    <meta name="description" content="be lulled. a small offering — slow down, feel small, play, or sit with a heavy day." />
+    <meta name="author" content="Nachiket" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="lull · be lulled" />
+    <meta property="og:description" content="be lulled. a small offering." />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="lull · be lulled" />
+    <meta name="twitter:description" content="be lulled." />
+
+    <style>
+      html, body { background: #050507; margin: 0; padding: 0; }
+      #root:empty::before {
+        content: '';
+        position: fixed;
+        top: 50%; left: 50%;
+        width: 60px; height: 60px;
+        margin: -30px 0 0 -30px;
+        border-radius: 50%;
+        background: radial-gradient(circle at 35% 35%, rgba(212, 197, 255, 0.5), rgba(140, 120, 200, 0.15) 50%, transparent 70%);
+        box-shadow: 0 0 60px rgba(212, 197, 255, 0.25);
+        animation: lp 3s ease-in-out infinite;
+      }
+      @keyframes lp {
+        0%, 100% { transform: scale(1); opacity: 0.7; }
+        50% { transform: scale(1.1); opacity: 1; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
